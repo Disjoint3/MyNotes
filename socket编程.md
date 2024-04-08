@@ -28,6 +28,23 @@ ipython3
 
 socket套接字是全双工
 
+### ！！！注意
+
+套接字的模块名是socket，写法不要错！！！！
+
+```python
+# 写法一
+import socket
+XXXX
+s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+
+# 写法二
+from socket import *
+s=socket(AF_INET,SOCK_STREAM)
+```
+
+
+
 ## udp
 
 ### 发送消息
@@ -451,4 +468,18 @@ with open("xxxxx") as f:
 #### 代码示例
 
 ![image-20231115142457249](D:\akkkkk\study\MyNotes\image\socket编程\image-20231115142457249.png)
+
+
+
+## 端口扫描
+
+
+
+
+
+
+
+
+
+
 
