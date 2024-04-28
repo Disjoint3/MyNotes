@@ -14,7 +14,7 @@ decimal 关键字指示 128 位数据类型。 与浮点型相比，decimal 类�
 
 ### 总结
 
-![image-20231127193856370](D:\akkkkk\study\MyNotes\image\C#\image-20231127193856370.png)
+<img src="D:\akkkkk\study\MyNotes\image\CSharp\\image-20231127193856370" alt="image-20240413233425505" style="zoom:50%;" />
 
 ## 常量
 
@@ -257,13 +257,13 @@ string，数组，类
 
 引用类型其实就是多个变量指向同一个内存地址
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231127210926444.png" alt="image-20231127210926444" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231127210926444.png" alt="image-20231127210926444" style="zoom:50%;" />
 
 ### 值类型
 
 除string的其他变量类型、结构体
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231127210901644.png" alt="image-20231127210901644" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231127210901644.png" alt="image-20231127210901644" style="zoom:50%;" />
 
 ### 区别
 
@@ -275,13 +275,13 @@ string，数组，类
 
   引用类型存储在堆空间，手动申请和释放，大而慢。
 
-  <img src="D:\akkkkk\study\MyNotes\image\C#\image-20231127210704223.png" alt="image-20231127210704223" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231127210704223.png" alt="image-20231127210704223" style="zoom:50%;" />
 
 ## String类型
 
 string非常的特殊，它具备值类型的特征 它变我不变。
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231127211309027.png" alt="image-20231127211309027" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231127211309027.png" alt="image-20231127211309027" style="zoom:50%;" />
 
 string虽然方便，但是有一个小缺点，就是频繁的改变string、重新赋值。会产生内存垃圾。
 
@@ -502,7 +502,7 @@ class test11
 
 优化：比过不比，加入bool
 
-![冒泡排序](D:\akkkkk\study\MyNotes\image\C#\冒泡排序.gif)
+![冒泡排序](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.gif)
 
 
 
@@ -1159,11 +1159,11 @@ is判断一个对象是否是指是类对象
 
 子类实例化时，默认自动调用的是类的无参构造。所以如果父类无参构造被顶掉会报错，子类中就无法默认调用无参构造了，如下：
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129192153934.png" alt="image-20231129192153934" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129192153934.png" alt="image-20231129192153934" style="zoom:50%;" />
 
 ### 通过base调用指定父类构造
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129192813736.png" alt="image-20231129192813736" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129192813736.png" alt="image-20231129192813736" style="zoom:50%;" />
 
 this调自己的构造函数，base调父类的构造函数。
 
@@ -1178,7 +1178,7 @@ object是所有类型的基类，它是一个类 (引用类型)
 - 可以利用里氏替换原则，用object容器装所有对象
 - 可以用来表示不确定类型，作为函数参数类型
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129193823705.png" alt="image-20231129193823705" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129193823705.png" alt="image-20231129193823705" style="zoom:50%;" />
 
 
 
@@ -1186,7 +1186,7 @@ object是所有类型的基类，它是一个类 (引用类型)
 
 - 好处: 不确定类型时可以方便参数的存储和传递，如下：
 
-  <img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129194627103.png" alt="image-20231129194627103" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129194627103.png" alt="image-20231129194627103" style="zoom:50%;" />
 
 - 坏处: 存在内存迁移，增加性能消耗
 
@@ -1234,7 +1234,7 @@ sealed class Son:Father
 
 virtual(虚函数)：可以被子类重写。
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129200943454.png" alt="image-20231129200943454" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129200943454.png" alt="image-20231129200943454" style="zoom:50%;" />
 
 
 
@@ -1265,13 +1265,13 @@ virtual(虚函数)：可以被子类重写。
 
 - 实现的接口方法可以加 virtual关键字，之后子类再重写
 
-  <img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129203848643.png" alt="image-20231129203848643" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129203848643.png" alt="image-20231129203848643" style="zoom:50%;" />
 
 ### 显示实现接口
 
 接口被显示实现，主要用于实现不同接口中的同名函数的不同表现
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129203257731.png" alt="image-20231129203257731" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129203257731.png" alt="image-20231129203257731" style="zoom:50%;" />
 
 
 
@@ -1281,9 +1281,7 @@ virtual(虚函数)：可以被子类重写。
 
 需要和override一起出现
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129204157562.png" alt="image-20231129204157562" style="zoom:50%;" />
-
-
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129204157562.png" alt="image-20231129204157562" style="zoom:50%;" />
 
 # --面向对象相关部分--
 
@@ -1318,7 +1316,7 @@ Equals
 
 - 判断两个对象是否相等
 
-  <img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129210918101.png" alt="image-20231129210918101" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129210918101.png" alt="image-20231129210918101" style="zoom:50%;" />
 
 ReferenceEquals
 
@@ -1352,7 +1350,7 @@ GetHashCode
 
 - 可以通过重写该函数来自己定义对象的哈希码算法，正常情况下使用的极少，基本不用。
 
-  <img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129210938751.png" alt="image-20231129210938751" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129210938751.png" alt="image-20231129210938751" style="zoom:50%;" />
 
 Tostring
 
@@ -1360,7 +1358,7 @@ Tostring
 
 - 非常常用，当我们调用打印方法时，默认使用的就是对象的Tostring方法后打印出来的内容
 
-  <img src="D:\akkkkk\study\MyNotes\image\C#\image-20231129210950426.png" alt="image-20231129210950426" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129210950426.png" alt="image-20231129210950426" style="zoom:50%;" />
 
 ## String类
 
@@ -1577,7 +1575,7 @@ B = null;
 A目前等于多少？
 ```
 
-![image-20231129092321318](D:\akkkkk\study\MyNotes\image\C#\image-20231129092321318.png)
+![image-20231129092321318](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231129092321318.png)
 
 ## 成员变量和访问修饰符
 
@@ -1600,7 +1598,7 @@ class包裹的东西最终会放在堆中。
 //请问p.age为多少？
 ```
 
-![image-20231130123836810](D:\akkkkk\study\MyNotes\image\C#\image-20231130123836810.png)
+![image-20231130123836810](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231130123836810.png)
 
 ### 习题六
 
@@ -1613,7 +1611,7 @@ Console.WriteLine(p.age);
 //请问p.age为多少？
 ```
 
-![image-20231130123955571](D:\akkkkk\study\MyNotes\image\C#\image-20231130123955571.png)
+![image-20231130123955571](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231130123955571.png)
 
 ### 习题七
 
@@ -1628,7 +1626,7 @@ Console.WriteLine(p.age);
 #endregion
 ```
 
-![image-20231130124128111](D:\akkkkk\study\MyNotes\image\C#\image-20231130124128111.png)
+![image-20231130124128111](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231130124128111.png)
 
 ### 习题八
 
@@ -1644,7 +1642,7 @@ Console.WriteLine(s.deskmate.age);
 #endregion
 ```
 
-![image-20231130124353630](D:\akkkkk\study\MyNotes\image\C#\image-20231130124353630.png)
+![image-20231130124353630](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231130124353630.png)
 
 
 
@@ -1718,7 +1716,7 @@ str2 += "123";
 #endregion
 ```
 
-![image-20231201112359794](D:\akkkkk\study\MyNotes\image\C#\image-20231201112359794.png)
+![image-20231201112359794](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231201112359794.png)
 
 ### 习题五
 
@@ -1728,7 +1726,7 @@ str2 += "123";
 //输出      {‘o’,‘l’,‘l’,‘e’,‘h’}
 ```
 
-![image-20231201113104783](D:\akkkkk\study\MyNotes\image\C#\image-20231201113104783.png)
+![image-20231201113104783](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231201113104783.png)
 
 
 
@@ -1760,7 +1758,7 @@ ArrayList是一个C#为我们封装好的类，本质是一个object类型的数
 
 ### hash表
 
-![image-20231205091533448](D:\akkkkk\study\MyNotes\image\C#\image-20231205091533448.png)
+![image-20231205091533448](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231205091533448.png)
 
 
 
@@ -1887,23 +1885,23 @@ delegate (参数列表)
 
 （首先）
 
-![image-20240315161542364](D:\akkkkk\study\MyNotes\image\unity\image-20240315161542364.png)
+![image-20240315161542364](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315161542364.png)
 
 （其次）
 
-![image-20240315161605650](D:\akkkkk\study\MyNotes\image\unity\image-20240315161605650.png)
+![image-20240315161605650](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315161605650.png)
 
-![image-20240315161617699](D:\akkkkk\study\MyNotes\image\unity\image-20240315161617699.png)
+![image-20240315161617699](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315161617699.png)
 
 （接着）
 
-![image-20240315161804700](D:\akkkkk\study\MyNotes\image\unity\image-20240315161804700.png)
+![image-20240315161804700](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315161804700.png)
 
-![image-20240315162019420](D:\akkkkk\study\MyNotes\image\unity\image-20240315162019420.png)
+![image-20240315162019420](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315162019420.png)
 
-![image-20240315162041574](D:\akkkkk\study\MyNotes\image\unity\image-20240315162041574.png)
+![image-20240315162041574](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315162041574.png)
 
-![image-20240315162157173](D:\akkkkk\study\MyNotes\image\unity\image-20240315162157173.png)
+![image-20240315162157173](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315162157173.png)
 
 - **简单来说，可以理解为，Lambda表达式在传入i的时候，是将i的地址存入的。**
 - **for循环只定义了一个i，因此三个匿名函数的参数i均为同一个，而for循环完毕后，i的地址上存储的值为3，因此匿名函数们的参数值都为3.**
@@ -1911,7 +1909,7 @@ delegate (参数列表)
 
 ##### foreach下的闭包
 
-![image-20240315162643681](D:\akkkkk\study\MyNotes\image\unity\image-20240315162643681.png)
+![image-20240315162643681](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315162643681.png)
 
 - **简单来说，就是前面for循环中，重复定义了3个j的情况。**
 
@@ -1919,9 +1917,9 @@ delegate (参数列表)
 
 以下是原文给出的代码：
 
-![image-20240315162839208](D:\akkkkk\study\MyNotes\image\unity\image-20240315162839208.png)
+![image-20240315162839208](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315162839208.png)
 
-![image-20240315162902146](D:\akkkkk\study\MyNotes\image\unity\image-20240315162902146.png)
+![image-20240315162902146](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20240315162902146.png)
 
 - **闭包会延长它使用的外部变量的生命周期，直到闭包本身被释放**。
 - 
@@ -2397,9 +2395,9 @@ class TestClass
 - 命名空间：System.Collections
 - 可以通过同时继承IEnumerable和IEnumerator，实现其中的方法
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231208154700227.png" alt="image-20231208154700227" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231208154700227.png" alt="image-20231208154700227" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\C#\image-20231208154720132.png" alt="image-20231208154720132" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231208154720132.png" alt="image-20231208154720132" style="zoom:50%;" />
 
 
 
@@ -2700,7 +2698,7 @@ F12进到类型的内部去查看，是class就是引用，是struct就是值
 
 单例模式
 
-![image-20231205093322662](D:\akkkkk\study\MyNotes\image\C#\image-20231205093322662.png)
+![image-20231205093322662](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_CSharp2image-20231205093322662.png)
 
 
 

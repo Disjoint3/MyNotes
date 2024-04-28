@@ -12,7 +12,7 @@
 
 ## 爬虫的流程
 
-![image-20231125155747149](D:\akkkkk\study\MyNotes\image\python爬虫\image-20231125155747149.png)
+![image-20231125155747149](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125155747149.png)
 
 **最难的是url是什么。**
 
@@ -30,7 +30,7 @@
 
 正常情况下，用浏览器的“检查”，可以定位到要下载的照片，一般是“img”标签中的“src”属性，也就知道了这个图片的URL。例如：
 
-![image-20231125160517854](D:\akkkkk\study\MyNotes\image\python爬虫\image-20231125160517854.png)
+![image-20231125160517854](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125160517854.png)
 
 #### 进一步分析
 
@@ -50,12 +50,12 @@
 
 6. 点击”三个点”->"search"
 
-   <img src="D:\akkkkk\study\MyNotes\image\python爬虫\image-20231125161811696.png" alt="image-20231125161811696" style="zoom:50%;" />
+   <img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125161811696.png" alt="image-20231125161811696" style="zoom:50%;" />
 
 7. 将URL粘贴，然后回车 查找
 
 8. 找到了URL所在的文件
-   ![image-20231125161841396](D:\akkkkk\study\MyNotes\image\python爬虫\image-20231125161841396.png)
+   ![image-20231125161841396](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125161841396.png)
 
 9. 也就确定了此URL所在的位置 https://wwwdouyun,com/g_yz的response中
 
@@ -67,7 +67,7 @@
 
 1. 获取需要的抖音视频的链接
 
-   <img src="C:\Users\14638\AppData\Roaming\Typora\typora-user-images\image-20231125162713458.png" alt="image-20231125162713458" style="zoom:50%;" />
+   <img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125162713458.png" alt="image-20231125162713458" style="zoom:50%;" />
 
 2. 需要下载的抖音视频地址：
    儿子捡破烂存了1W多，你们觉得捡破烂丢人吗? 我教育他靠自己的双手挣的最干净都是光荣的，不丢人。大家觉得我说吗? https://v.douyin.com/Jacf7Uc/ 复制此链接，打开抖了 直接观看视频!
@@ -82,7 +82,7 @@
 
 水印的英文名为“watermark”，抖音的视频地址中“playervm”，去掉“vm”，即可找到无水印的视频。
 
-![image-20231125170803336](D:\akkkkk\study\MyNotes\image\python爬虫\image-20231125170803336.png)
+![image-20231125170803336](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125170803336.png)
 
 ### 百度地图商家
 
@@ -94,17 +94,17 @@
 
 打开“预览”后，查看可以找到商家对应的链接：
 
-![image-20231125172454033](D:\akkkkk\study\MyNotes\image\python爬虫\image-20231125172454033.png)
+![image-20231125172454033](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125172454033.png)
 
 ##### 页数
 
 查找药店后，发现是一页一页显示的，一页10个商家。“XHR”显示如下：
 
-![image-20231125172210752](D:\akkkkk\study\MyNotes\image\python爬虫\image-20231125172210752.png)
+![image-20231125172210752](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125172210752.png)
 
 按了“下一页后”，“XHR”显示如下：
 
-![image-20231125172230653](D:\akkkkk\study\MyNotes\image\python爬虫\image-20231125172230653.png)
+![image-20231125172230653](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125172230653.png)
 
 接着就可以对比不同页的链接的不同，从而找到不同页数的规律。
 
@@ -114,7 +114,7 @@
 
 #### 拓：URL编码
 
-![image-20231125172703706](D:\akkkkk\study\MyNotes\image\python爬虫\image-20231125172703706.png)
+![image-20231125172703706](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonCrawlerimage-20231125172703706.png)
 
 请求报文中的链接出现了一些百分号什么什么的，这些是URL编码后的。想要知道真正的内容，需要继续宁解码。
 

@@ -6,17 +6,17 @@
 
 方法一：
 
-![image-20240327192521779](D:\akkkkk\study\MyNotes\image\unity项目实践知识\image-20240327192521779.png)
+![image-20240327192521779](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityProjectPracticeimage-20240327192521779.png)
 
-![image-20240327192603517](D:\akkkkk\study\MyNotes\image\unity项目实践知识\image-20240327192603517.png)
+![image-20240327192603517](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityProjectPracticeimage-20240327192603517.png)
 
 方法二：
 
-![image-20240327192612764](D:\akkkkk\study\MyNotes\image\unity项目实践知识\image-20240327192612764.png)
+![image-20240327192612764](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityProjectPracticeimage-20240327192612764.png)
 
-![image-20240327192623834](D:\akkkkk\study\MyNotes\image\unity项目实践知识\image-20240327192623834.png)
+![image-20240327192623834](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityProjectPracticeimage-20240327192623834.png)
 
-![image-20240327192627766](D:\akkkkk\study\MyNotes\image\unity项目实践知识\image-20240327192627766.png)
+![image-20240327192627766](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityProjectPracticeimage-20240327192627766.png)
 
 
 

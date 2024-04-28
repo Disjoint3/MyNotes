@@ -4,11 +4,11 @@
 
 ## 理论知识
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20231213174709952.png" alt="image-20231213174709952" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213174709952.png" alt="image-20231213174709952" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20231213174805347.png" alt="image-20231213174805347" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213174805347.png" alt="image-20231213174805347" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20231213174953050.png" alt="image-20231213174953050" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213174953050.png" alt="image-20231213174953050" style="zoom:50%;" />
 
 ### unity模型
 
@@ -18,15 +18,15 @@
 
 ### unity反射机制
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20231213180344820.png" alt="image-20231213180344820" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213180344820.png" alt="image-20231213180344820" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20231213180332751.png" alt="image-20231213180332751" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213180332751.png" alt="image-20231213180332751" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20231213180357433.png" alt="image-20231213180357433" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213180357433.png" alt="image-20231213180357433" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20231213180449431.png" alt="image-20231213180449431" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213180449431.png" alt="image-20231213180449431" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20231213180821634.png" alt="image-20231213180821634" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213180821634.png" alt="image-20231213180821634" style="zoom:50%;" />
 
 ### unity游戏场景
 
@@ -38,15 +38,15 @@
 
 ### 脚本基本规则
 
-![image-20231213205927890](D:\akkkkk\study\MyNotes\image\unity\image-20231213205927890.png)
+![image-20231213205927890](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213205927890.png)
 
 ### 生命周期函数
 
-![image-20231213185520437](D:\akkkkk\study\MyNotes\image\unity\image-20231213185520437.png)
+![image-20231213185520437](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213185520437.png)
 
 
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20231213190136936.png" alt="image-20231213190136936"  />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231213190136936.png" alt="image-20231213190136936"  />
 
 - Awake()
 - OnEnable()
@@ -783,7 +783,7 @@ this.transform.Translate(Vector3.forward * 1 * Time.deltaTime, Space.World);
 
 第一种比较好理解。如图：
 
-![image-20231222143706299](D:\akkkkk\study\MyNotes\image\unity\image-20231222143706299.png)
+![image-20231222143706299](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231222143706299.png)
 
 参考坐标系是世界坐标系（红色的坐标系），V3（0，0，1）相当于往z轴运动。
 
@@ -798,7 +798,7 @@ this.transform.Translate(this.transform.forward * 1 * Time.deltaTime, Space.Worl
 
 第二种也不难理解， 看图：
 
-![image-20231222144052206](D:\akkkkk\study\MyNotes\image\unity\image-20231222144052206.png)
+![image-20231222144052206](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231222144052206.png)
 
 参考坐标系是世界坐标系，this表示方向是自己坐标系下的面朝向的V3。
 
@@ -815,7 +815,7 @@ this.transform.Translate(this.transform.forward * 1 * Time.deltaTime, Space.Self
 
 第三种的朝向很奇怪特别讲一下，如图：
 
-![image-20231222145258976](D:\akkkkk\study\MyNotes\image\unity\image-20231222145258976.png)
+![image-20231222145258976](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231222145258976.png)
 
 可以看到，这里是相对于自己坐标系，自己的面朝向运动，刚开始认为，自己坐标系的面朝向应该就是自己坐标系（蓝色的坐标系）的z轴方向才对。
 
@@ -832,7 +832,7 @@ this.transform.Translate(Vector3.forward * 1 * Time.deltaTime, Space.Self);
 
 这个比较好理解，如图
 
-![image-20231222145648171](D:\akkkkk\study\MyNotes\image\unity\image-20231222145648171.png)
+![image-20231222145648171](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231222145648171.png)
 
 参考坐标系是自己的坐标系（蓝色），V3相当于是（0，0，1）即z轴方向。合起来就相当于是**沿着物体自己坐标系的z轴方向运动，映射到世界坐标系上如绿色射线所示，而将此射线的方向呈现在自己坐标系上，又是和又是和自己坐标系的z轴方向一致**。运动方向如绿色箭头所示。
 
@@ -1513,15 +1513,15 @@ light.intensity = 0.5f;
 
 #### 光面板
 
-![image-20231220151643484](D:\akkkkk\study\MyNotes\image\unity\image-20231220151643484.png)
+![image-20231220151643484](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220151643484.png)
 
 ##### 环境相关设置（Environment）
 
-![image-20231220151409783](D:\akkkkk\study\MyNotes\image\unity\image-20231220151409783.png)
+![image-20231220151409783](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220151409783.png)
 
 ##### 其他设置（OtherSettings） 
 
-![image-20231220151426637](D:\akkkkk\study\MyNotes\image\unity\image-20231220151426637.png)
+![image-20231220151426637](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220151426637.png)
 
 
 
@@ -1539,11 +1539,11 @@ light.intensity = 0.5f;
 
 刚体可以让物体有了力的作用，产生力的效果。
 
-![image-20231220152614508](D:\akkkkk\study\MyNotes\image\unity\image-20231220152614508.png)
+![image-20231220152614508](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220152614508.png)
 
-![image-20231220152637935](D:\akkkkk\study\MyNotes\image\unity\image-20231220152637935.png)
+![image-20231220152637935](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220152637935.png)
 
-![image-20231220154121113](D:\akkkkk\study\MyNotes\image\unity\image-20231220154121113.png)
+![image-20231220154121113](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220154121113.png)
 
 ##### Augular Drag
 
@@ -1565,7 +1565,7 @@ light.intensity = 0.5f;
 
 ##### 组件参数
 
-![image-20231220154720859](D:\akkkkk\study\MyNotes\image\unity\image-20231220154720859.png)
+![image-20231220154720859](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220154720859.png)
 
 ###### Is Trigger
 
@@ -1574,20 +1574,20 @@ light.intensity = 0.5f;
 
 ##### 常用碰撞器
 
-![image-20231220154843223](D:\akkkkk\study\MyNotes\image\unity\image-20231220154843223.png)
+![image-20231220154843223](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220154843223.png)
 
 ##### 多种碰撞体组合
 
 可以通过父子物体进行。
 
-![image-20231220155133318](D:\akkkkk\study\MyNotes\image\unity\image-20231220155133318.png)
+![image-20231220155133318](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220155133318.png)
 
 ##### 网格碰撞器
 
 - 性能消耗太高。
 - 加了网格碰撞器的物体，如果需要用刚体，必须要勾选“Convex”才可以。
 
-![image-20231220155450273](D:\akkkkk\study\MyNotes\image\unity\image-20231220155450273.png)
+![image-20231220155450273](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220155450273.png)
 
 ##### 环状碰撞器
 
@@ -1604,11 +1604,11 @@ light.intensity = 0.5f;
 
 ##### 创建物理材质
 
-![image-20231220160930386](D:\akkkkk\study\MyNotes\image\unity\image-20231220160930386.png)
+![image-20231220160930386](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220160930386.png)
 
 ##### 物理材质参数
 
-![image-20231220160913000](D:\akkkkk\study\MyNotes\image\unity\image-20231220160913000.png)
+![image-20231220160913000](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220160913000.png)
 
 
 
@@ -1813,21 +1813,21 @@ if (rigidBody.IsSleeping())
 
 ##### 音效常用格式
 
-![image-20231220171827606](D:\akkkkk\study\MyNotes\image\unity\image-20231220171827606.png)
+![image-20231220171827606](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220171827606.png)
 
 ##### 音频文件属性（面板）
 
-![image-20231220171955163](D:\akkkkk\study\MyNotes\image\unity\image-20231220171955163.png)
+![image-20231220171955163](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220171955163.png)
 
- ![image-20231220190950484](D:\akkkkk\study\MyNotes\image\unity\image-20231220190950484.png)
+ ![image-20231220190950484](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220190950484.png)
 
 #### 音频源脚本
 
 ##### 面板参数
 
-![image-20231220191241531](D:\akkkkk\study\MyNotes\image\unity\image-20231220191241531.png)
+![image-20231220191241531](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220191241531.png)
 
-![image-20231220191409146](D:\akkkkk\study\MyNotes\image\unity\image-20231220191409146.png)
+![image-20231220191409146](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231220191409146.png)
 
 ####  代码控制
 
@@ -2057,11 +2057,11 @@ UnityAction<string> uac1 = (s) =>
 
 ### 模型资源导入
 
-![image-20240316143337142](D:\akkkkk\study\MyNotes\image\unity\image-20240316143337142.png)
+![image-20240316143337142](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240316143337142.png)
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240316143422108.png" alt="image-20240316143422108" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240316143422108.png" alt="image-20240316143422108" style="zoom:50%;" />
 
-![image-20240316143718832](D:\akkkkk\study\MyNotes\image\unity\image-20240316143718832.png)
+![image-20240316143718832](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240316143718832.png)
 
 
 
@@ -2075,9 +2075,9 @@ UnityAction<string> uac1 = (s) =>
 
 # <center>---------数据持久化---------</center>
 
-![image-20231222162646262](D:\akkkkk\study\MyNotes\image\unity\image-20231222162646262.png)
+![image-20231222162646262](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231222162646262.png)
 
-![image-20231222162721300](D:\akkkkk\study\MyNotes\image\unity\image-20231222162721300.png)
+![image-20231222162721300](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20231222162721300.png)
 
 # PlayerPrefbs
 
@@ -2187,15 +2187,15 @@ PlayerPrefs中不同数据是由key决定的，不同的key决定了不同的数
 
 ## 反射知识补充
 
-![image-20240316165656368](D:\akkkkk\study\MyNotes\image\unity\image-20240316165656368.png)
+![image-20240316165656368](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240316165656368.png)
 
-![image-20240226234548369](D:\akkkkk\study\MyNotes\image\unity\image-20240226234548369.png)
+![image-20240226234548369](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240226234548369.png)
 
 ```
 Type的IsAssignableFrom()函数，返回是否能装
 ```
 
-![image-20240226234613060](D:\akkkkk\study\MyNotes\image\unity\image-20240226234613060.png)
+![image-20240226234613060](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240226234613060.png)
 
 ```
 Type的GetGenericArguments()函数，获取泛型类型
@@ -2203,9 +2203,9 @@ Type的GetGenericArguments()函数，获取泛型类型
 
 ## 需求分析
 
-![image-20240226234932172](D:\akkkkk\study\MyNotes\image\unity\image-20240226234932172.png)
+![image-20240226234932172](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240226234932172.png)
 
-![image-20240226235009767](D:\akkkkk\study\MyNotes\image\unity\image-20240226235009767.png)
+![image-20240226235009767](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240226235009767.png)
 
 ## 大致思路和套路
 
@@ -2216,7 +2216,7 @@ Type的GetGenericArguments()函数，获取泛型类型
 - FieldInfo类型就是用于存储字段（变量）的。包含了该字段（成员变量）的类型名、变量名。
 - 以此，可以
 
-![image-20240316165246963](D:\akkkkk\study\MyNotes\image\unity\image-20240316165246963.png)
+![image-20240316165246963](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240316165246963.png)
 
 ```c#
 //（假设要存储的数据是obect data）
@@ -2398,7 +2398,7 @@ GUI.Label(new Rect(0, 0, 100, 20), "唐老狮欢迎你", style);
 
 style的参数含义如下：
 
-![image-20240306105453413](D:\akkkkk\study\MyNotes\image\unity\image-20240306105453413.png)
+![image-20240306105453413](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240306105453413.png)
 
 ### 按钮控件
 
@@ -2679,7 +2679,7 @@ GUI.EndScrollView();
 - nowPos为滚动的文本框，当前相对于初始的所在位置。
 - showPos决定具体内容的大小
 
-![image-20240306114814793](D:\akkkkk\study\MyNotes\image\unity\image-20240306114814793.png)
+![image-20240306114814793](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240306114814793.png)
 
 ```c#
 public Rect scPos;
@@ -2918,9 +2918,9 @@ private void OnGUI()
 - 中心点偏移位置：控件原点在控件的左上角
 - 偏移位置：固定在某个点后，相对于该点的偏移值
 
-![image-20240315131655519](D:\akkkkk\study\MyNotes\image\unity\image-20240315131655519.png)
+![image-20240315131655519](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240315131655519.png)
 
-![image-20240315131911672](D:\akkkkk\study\MyNotes\image\unity\image-20240315131911672.png)
+![image-20240315131911672](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240315131911672.png)
 
 
 
@@ -3159,7 +3159,7 @@ void Start()
 
 市面上的手柄大致有三种，任天堂、索尼和微软这三套。
 
-![image-20240320234330607](D:\akkkkk\study\MyNotes\image\unity\image-20240320234330607.png)
+![image-20240320234330607](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240320234330607.png)
 
 ```c#
 void Start()
@@ -3334,43 +3334,43 @@ void Update()
 
 #### “齿轮”设置
 
-![image-20240320235731247](D:\akkkkk\study\MyNotes\image\unity\image-20240320235731247.png)
+![image-20240320235731247](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240320235731247.png)
 
 Actinos参数：
 
-![image-20240320235747615](D:\akkkkk\study\MyNotes\image\unity\image-20240320235747615.png)
+![image-20240320235747615](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240320235747615.png)
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240320235812583.png" alt="image-20240320235812583" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240320235812583.png" alt="image-20240320235812583" style="zoom:80%;" />
 
 Interactions参数：
 
-![image-20240321000000564](D:\akkkkk\study\MyNotes\image\unity\image-20240321000000564.png)
+![image-20240321000000564](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321000000564.png)
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321000030026.png" alt="image-20240321000030026" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321000030026.png" alt="image-20240321000030026" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321000122566.png" alt="image-20240321000122566" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321000122566.png" alt="image-20240321000122566" style="zoom:50%;" />
 
 Prcessors参数：
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321000302900.png" alt="image-20240321000302900" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321000302900.png" alt="image-20240321000302900" style="zoom:80%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321000327939.png" alt="image-20240321000327939" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321000327939.png" alt="image-20240321000327939" style="zoom:50%;" />
 
-<img src="C:\Users\14638\AppData\Roaming\Typora\typora-user-images\image-20240321000619976.png" alt="image-20240321000619976" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321000619976.png" alt="image-20240321000619976" style="zoom:50%;" />
 
 #### “+号”设置
 
 添加的是输入的类型
 
-![image-20240321000826382](D:\akkkkk\study\MyNotes\image\unity\image-20240321000826382.png)
+![image-20240321000826382](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321000826382.png)
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321000912755.png" alt="image-20240321000912755" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321000912755.png" alt="image-20240321000912755" style="zoom:80%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321002153267.png" alt="image-20240321002153267" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321002153267.png" alt="image-20240321002153267" style="zoom:80%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321003045998.png" alt="image-20240321003045998" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321003045998.png" alt="image-20240321003045998" style="zoom:80%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321003527362.png" alt="image-20240321003527362" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321003527362.png" alt="image-20240321003527362" style="zoom:80%;" />
 
 ### InputAction的使用
 
@@ -3469,13 +3469,13 @@ void Start()
 
 ### InputSystem Package的设置
 
-![image-20240321003956529](D:\akkkkk\study\MyNotes\image\unity\image-20240321003956529.png)
+![image-20240321003956529](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321003956529.png)
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321003911564.png" alt="image-20240321003911564" style="zoom: 80%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321003911564.png" alt="image-20240321003911564" style="zoom: 80%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321003930105.png" alt="image-20240321003930105" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321003930105.png" alt="image-20240321003930105" style="zoom:80%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321003941885.png" alt="image-20240321003941885" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321003941885.png" alt="image-20240321003941885" style="zoom:80%;" />
 
 
 
@@ -3488,15 +3488,15 @@ void Start()
 - PlayerInput会自动帮助我们解析该文件。当触发这些InputAction输入动作时会以分发事件的形式通知我们执行行为
 - 该文件本质就是将这些信息写成了Json文件
 
-![image-20240321011951192](D:\akkkkk\study\MyNotes\image\unity\image-20240321011951192.png)
+![image-20240321011951192](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321011951192.png)
 
 ActionMaps：
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321012036707.png" alt="image-20240321011951192" style="zoom: 67%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321012036707.png" alt="image-20240321011951192" style="zoom: 67%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321014044967.png" alt="image-20240321011951192" style="zoom: 50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321014044967.png" alt="image-20240321011951192" style="zoom: 50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321084554571.png" alt="image-20240321084554571" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321084554571.png" alt="image-20240321084554571" style="zoom:50%;" />
 
 ### 配置文件与C#脚本结合
 
@@ -3534,7 +3534,7 @@ private void Start()
 
 ### 参数解释
 
-![image-20240321091119035](D:\akkkkk\study\MyNotes\image\unity\image-20240321091119035.png)
+![image-20240321091119035](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321091119035.png)
 
 ### 行为执行模式解释（Behavior）
 
@@ -3668,9 +3668,9 @@ PlayerInputManager 组件主要是用于管理本地多人输入的输入管理�
 
 ### 参数解释
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321141039739.png" alt="image-20240321141039739" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321141039739.png" alt="image-20240321141039739" style="zoom:67%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321141125472.png" alt="image-20240321141125472" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321141125472.png" alt="image-20240321141125472" style="zoom:67%;" />
 
 ### 使用
 
@@ -3694,13 +3694,13 @@ PlayerInputManager 组件主要是用于管理本地多人输入的输入管理�
 
 #### 输入模块参数相关
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321150150460.png" alt="image-20240321150150460" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321150150460.png" alt="image-20240321150150460" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321150605285.png" alt="image-20240321150605285" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321150605285.png" alt="image-20240321150605285" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321150839137.png" alt="image-20240321150839137" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321150839137.png" alt="image-20240321150839137" style="zoom:50%;" />
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321150909396.png" alt="image-20240321150909396" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321150909396.png" alt="image-20240321150909396" style="zoom:50%;" />
 
 ### VR相关中使用新输入系统注意事项
 
@@ -3744,7 +3744,7 @@ PlayerInput组件->Open Input Debugger
 
 ### 窗口上的信息
 
-<img src="D:\akkkkk\study\MyNotes\image\unity\image-20240321160513299.png" alt="image-20240321160513299" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321160513299.png" alt="image-20240321160513299" style="zoom:50%;" />
 
 （此处赶进度没有继续听下去，有需要再回头来）
 
@@ -3754,7 +3754,7 @@ PlayerInput组件->Open Input Debugger
 
 ### 1.
 
-![image-20240320232955442](D:\akkkkk\study\MyNotes\image\unity\image-20240320232955442.png)
+![image-20240320232955442](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240320232955442.png)
 
 ```c#
 public class Exercises : MonoBehaviour
@@ -3818,7 +3818,7 @@ public class Exercises : MonoBehaviour
 
 ### 2、
 
-![image-20240321004127135](D:\akkkkk\study\MyNotes\image\unity\image-20240321004127135.png)
+![image-20240321004127135](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321004127135.png)
 
 
 
@@ -3909,7 +3909,39 @@ InputSystem.onAnyButtonPress.CallOnce((control) =>
 
 ### 实践内容（改键功能）
 
-![image-20240321161455304](D:\akkkkk\study\MyNotes\image\unity\image-20240321161455304.png)
+![image-20240321161455304](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_unityimage-20240321161455304.png)
+
+
+
+# --------------TimeLine--------------
+
+## 拓展方法
+
+
+
+步骤一：脚本一编写轨道，继承TrackAsset（轨道资产），
+
+步骤二：脚本一使用TrackBindingType（轨道绑定类型）特性来标记需要绑定的成员（比如Light、Text等）
+
+步骤四：脚本一添加TrackClipType注释（轨道和片段产生联系，让片段能够添加到轨道上）
+
+
+
+
+
+步骤三：脚本二编写片段，继承PlayableAsset（可播放资产）、实现ITimelineClipAsset（主要是实现支持特性）
+
+
+
+步骤五：脚本三编写片段行为（如何操控该对象），继承PlayableBehaviour。（轨道不支持混合就直接重写ProcessFrame函数，在里面编写控制光源）
+
+
+
+步骤六：（若要轨道能够混合）脚本三继承PlayableBehaviour
+
+
+
+TrackAsset代表了Tlmeline里的一类轨道
 
 
 
@@ -3919,9 +3951,11 @@ InputSystem.onAnyButtonPress.CallOnce((control) =>
 
 
 
+# ------------算法------------
 
+# A星寻路算法
 
-
+大多数时候是用在2d游戏中的。unity的3d可以用网格寻路。
 
 
 

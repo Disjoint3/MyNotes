@@ -141,7 +141,7 @@ udp_socket.close()
 
    接收到的是一个元组，例如：
 
-   ![image-20231112172931227](D:\akkkkk\study\MyNotes\image\socket编程\image-20231112172931227.png)
+   ![image-20231112172931227](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonSocketimage-20231112172931227.png)
 
    - 解析接收数据
 
@@ -160,7 +160,7 @@ udp_socket.close()
 
 ### 总结
 
-![image-20231114185044296](D:\akkkkk\study\MyNotes\image\socket编程\image-20231114185044296.png)
+![image-20231114185044296](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonSocketimage-20231114185044296.png)
 
 1. **创建套接字**
 
@@ -231,7 +231,7 @@ if __name__ == "__main__":
 
 ### 示例代码
 
-![image-20231113184727045](D:\akkkkk\study\MyNotes\image\socket编程\image-20231113184727045.png)
+![image-20231113184727045](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonSocketimage-20231113184727045.png)
 
 
 
@@ -357,7 +357,7 @@ def main():
 
 ##### 示例
 
-![image-20231115113154293](D:\akkkkk\study\MyNotes\image\socket编程\image-20231115113154293.png)
+![image-20231115113154293](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonSocketimage-20231115113154293.png)
 
 
 
@@ -369,7 +369,7 @@ def main():
 
 ##### 代码示例
 
-![image-20231115131744790](D:\akkkkk\study\MyNotes\image\socket编程\image-20231115131744790.png)
+![image-20231115131744790](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonSocketimage-20231115131744790.png)
 
 ### 总结
 
@@ -443,7 +443,7 @@ with open("xxxxx") as f:
 
 #### 示例代码
 
-![image-20231115142350563](D:\akkkkk\study\MyNotes\image\socket编程\image-20231115142350563.png)
+![image-20231115142350563](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonSocketimage-20231115142350563.png)
 
 ### 服务器
 
@@ -467,7 +467,7 @@ with open("xxxxx") as f:
 
 #### 代码示例
 
-![image-20231115142457249](D:\akkkkk\study\MyNotes\image\socket编程\image-20231115142457249.png)
+![image-20231115142457249](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/HisPic/MyNotes_PythonSocketimage-20231115142457249.png)
 
 
 
