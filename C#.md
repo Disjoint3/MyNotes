@@ -1,6 +1,6 @@
 # C#
 
-# C#入门
+# 一、C#入门
 
 ## 变量
 
@@ -161,7 +161,7 @@ a = r.Next(0,10);
 
 
 
-# C#基础
+# 二、C#基础
 
 ## 枚举
 
@@ -518,7 +518,7 @@ class test11
 
 
 
-# C#核心
+# 三、C#核心
 
 # --封装部分--
 
@@ -1052,8 +1052,6 @@ class test333
 - 一个符号可以多个重载
 - 不能用ref和out
 
-关键字：operator
-
 ```c#
 public static 返回值 operator运算符(参数列表)
 ```
@@ -1068,6 +1066,11 @@ public static 返回值 operator运算符(参数列表)
 - 点.
 - 三目运算符? :
 - 赋值符号=
+
+### 补充
+
+- operator还可以用于类或结构中类型的自定义转换。
+- explicit显示转换，implicit隐式转换
 
 
 
@@ -1736,7 +1739,7 @@ str2 += "123";
 
 
 
-# C#进阶
+# 四、C#进阶
 
 ## 简单数据结构类
 
@@ -2706,13 +2709,1766 @@ F12进到类型的内部去查看，是class就是引用，是struct就是值
 
 
 
+# 五、C#知识补充
+
+## Unity跨平台原理
+
+### .Net相关知识
+
+![image-20240520233023129](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618.png)
+
+![image-20240520233109878](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-1.png)
+
+#### .Net 跨语言
+
+![image-20240520233147623](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-2.png)
+
+![image-20240520233220650](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-3.png)
+
+![image-20240520233314785](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-4.png)
+
+##### .Net Framework
+
+![image-20240520233431954](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-5.png)
+
+![image-20240520233536523](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-6.png)
+
+![image-20240520233814417](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-7.png)
+
+- 所有根据CLS规范设计的语言，先转换成CIL代码，然后再通过CLR公共语言进行时，转换成Windows可以使用的机器语言。
+
+
+![image-20240520234225274](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-8.png)
+
+- **CLR：公共语言运行时。可以看作是个虚拟机。**
+- **CIL(IL)：公共中间代码。**
+
+![image-20240520234313664](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-9.png)
+
+![image-20240520234333525](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-10.png)
+
+#### .Net 跨平台
+
+![image-20240520233415326](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-11.png)
+
+##### .Net Core
+
+![image-20240520234540922](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-12.png)
+
+##### Mono
+
+![image-20240520234631321](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-13.png)
+
+![image-20240520234751992](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-14.png)
+
+#### 总结
+
+![image-20240520234954997](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-15.png)
+
+![image-20240520235008307](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-16.png)
+
+![image-20240520235036315](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-17.png)
+
+![image-20240520235138083](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-18.png)
+
+### Unity与Mono
+
+![image-20240520235608388](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-19.png)
+
+![image-20240520235617618](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-20.png)
+
+### Mono
+
+#### 前置知识
+
+![image-20240520235642756](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-21.png)
+
+![image-20240520235743199](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-22.png)
+
+![image-20240520235757881](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-23.png)
+
+#### 跨平台原理
+
+![image-20240521000003472](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-24.png)
+
+![image-20240521000110874](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-25.png)
+
+- unity最开始C#、Java、Boo等都可以使用，但是因为C#太过强大了，其他的语言都渐渐被淘汰了。
+
+![image-20240521000149767](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-26.png)
+
+#### 总结
+
+![image-20240521000249127](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-27.png)
+
+### IL2CPP
+
+![image-20240521000343297](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-28.png)
+
+#### 跨平台原理
+
+![image-20240521000440712](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-29.png)
+
+![image-20240521000543944](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-30.png)
+
+![image-20240521000613972](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-31.png)
+
+#### 总结
+
+![image-20240521001002403](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-32.png)
+
+### 打包问题
+
+#### 类型裁剪
+
+![image-20240521230915469](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-33.png)
+
+#### 泛式问题
+
+![image-20240521231002904](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-34.png)
+
+#### 总结
+
+![image-20240521231359849](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-35.png)
+
+### Mono与IL2CPP
+
+![image-20240521000706320](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-36.png)
+
+![image-20240521000711865](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-37.png)
+
+![image-20240521000805545](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-38.png)
+
+#### 使用建议
+
+![image-20240521000850019](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-39.png)
+
+#### 总结
+
+![image-20240521000926530](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-40.png)
+
+## Unity与C#版本
+
+### 基础知识点
+
+![image-20240521231500398](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-41.png)
+
+![image-20240521231518223](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-42.png)
+
+![image-20240521231536740](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-43.png)
+
+![image-20240521231545096](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-44.png)
+
+![image-20240521231559837](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-45.png)
+
+## C#各版本新功能和语法
+
+![image-20240521232055495](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-46.png)
+
+### C#1-4
+
+![image-20240521232102691](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-47.png)
+
+![image-20240521233122705](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-48.png)
+
+#### 命名和可选参数
+
+好处：可以让我们更方便的调用函数，少写一些重载函数
+
+- 可以在函数调用时，直接用参数名字赋值，不需要根据函数参数的顺序输入。
+
+```c#
+Test(1, 1.2f, true);
+Test(f: 3.3f, i: 5, b: false);
+Test(b: false, f: 3.4f, i: 3);
+
+public void Test(int i, float f, bool b)
+{
+
+}
+
+```
+
+- 可以在有默认值参数的函数调用时，不必再重复赋值，只给自己想要的参数赋值即可。
+
+```c#
+Test2(1, true, "234");
+Test2(1, s: "234");
+
+public void Test2(int i , bool b = true, string s = "123")
+{
+
+}
+```
 
 
 
+#### 动态类型
+
+（不建议使用）
+
+![image-20240521232657888](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-49.png)
+
+动态类型类似于object类型，可以用来存储任意类型。但是在使用动态类型的函数时，不会有提示（因为它可能是任何类型），因此需要自己知道里面有什么函数。
+
+好处：动态类型可以节约代码量，当不确定对象类型，但是确定对象成员时，可以使用动态类型。通过反射处理某些功能时，也可以考虑使用动态类型来替换它
+
+### C#5
+
+![image-20240521233224270](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-50.png)
+
+#### 线程
+
+- Unity支持多线程
+- Unity中开启的多线程<u>不能使用主线程中的对象</u>
+- Unity中开启多线程后一定记住关闭
+
+```c#
+private void Start()
+{
+    t = new Thread(()=> {
+        while (true)
+        {
+            print("123");
+            Thread.Sleep(1000);
+        }
+    });
+    t.Start();
+    print("主线程执行");
+}
+
+private void OnDestroy()
+{
+    t.Abort();
+}
+```
+
+#### 线程池
+
+线程池 是一个C#写好的 装线程的缓存池
+
+优点：可以在我们频繁的需要创建删除线程时提高性能，节约内存
+
+缺点：不能控制线程池中线程的执行顺序，也不能获取线程池内线程取消/异常/完成的通知
+
+![image-20240521233653208](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-51.png)
+
+ThreadPool是一个静态类，里面提供了很多静态成员。
+
+```c#
+private void Start()
+{
+    //1.获取可用的工作线程数和I/O线程数
+    int num1;
+    int num2;
+    ThreadPool.GetAvailableThreads(out num1, out num2);
+    print(num1);
+    print(num2);
+
+
+    //3.设置线程池中可以同时处于活动状态的 工作线程的最大数目和I/O线程的最大数目
+    //  大于次数的请求将保持排队状态，知直到线程池线程变为可用
+    //  更改成功返回true，失败返回false
+    if(ThreadPool.SetMaxThreads(20, 20))
+    {
+        print("更改成功");
+    }
+
+    //2.获取线程池中工作线程的最大数目和I/O线程的最大数目
+    ThreadPool.GetMaxThreads(out num1, out num2);
+    print(num1);
+    print(num2);
+
+    //5.设置 工作线程的最小数目和I/O线程的最小数目
+    if(ThreadPool.SetMinThreads(5, 5))
+    {
+        print("设置成功");
+    }
+    //4.获取线程池中工作线程的最小数目和I/O线程的最小数目
+    ThreadPool.GetMinThreads(out num1, out num2);
+    print(num1);
+    print(num2);
+
+    //6.将方法排入队列以便执行，当线程池中线程变得可用时执行
+
+    ThreadPool.QueueUserWorkItem((obj) =>
+    {
+        print(obj);
+        print("开启了一个线程");
+    }, "123452435345");
+
+    for (int i = 0; i < 10; i++)
+    {
+        ThreadPool.QueueUserWorkItem((obj) =>
+        {
+            print("第" + obj + "个任务");
+        }, i);
+    }
+
+    print("主线程执行");
+}
+```
+
+#### Task任务类
+
+```
+//命名空间：System.Threading.Tasks
+//类名：Task
+```
+
+![image-20240521234900161](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-52.png)
+
+![image-20240522001139877](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-53.png)
+
+##### 创建无返回值Task
+
+```c#
+bool isRuning;
+
+private void start()
+{
+	//1.通过new一个Task对象传入委托函数并启动
+    Task t1 = new Task(() =>
+    {
+        int i = 0;
+        while (isRuning)
+        {
+            print("方式一:" + i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+    });
+    t1.Start();
+
+    //2.通过Task中的Run静态方法传入委托函数
+    Task t2 = Task.Run(() =>
+    {
+        int i = 0;
+        while (isRuning)
+        {
+            print("方式二:" + i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+    });
+
+    //3.通过Task.Factory中的StartNew静态方法传入委托函数
+    Task t3 = Task.Factory.StartNew(() =>
+    {
+        int i = 0;
+        while (isRuning)
+        {
+            print("方式三:" + i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+    });
+}
+```
+
+##### 创建有返回值Task
+
+![image-20240521235706780](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-54.png)
+
+```c#
+Task<int> t1;
+Task<string> t2;
+Task<float> t3;
+
+private void Start()
+{
+	//1.通过new一个Task对象闯入委托函数并启动
+    t1 = new Task<int>(() =>
+    {
+        int i = 0;
+        while (isRuning)
+        {
+            print("方式一:" + i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+        return 1;
+    });
+    t1.Start();
+
+    //2.通过Task中的Run静态方法传入委托函数
+    t2 = Task.Run<string>(() =>
+    {
+        int i = 0;
+        while (isRuning)
+        {
+            print("方式二:" + i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+        return "1231";
+    });
+
+    //3.通过Task.Factory中的StartNew静态方法传入委托函数
+    t3 = Task.Factory.StartNew<float>(() =>
+    {
+        int i = 0;
+        while (isRuning)
+        {
+            print("方式三:" + i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+        return 4.5f;
+    });
+}
+
+void Update()
+{
+    if(Input.GetKeyDown(KeyCode.Space))
+    {
+        isRuning = false;
+        print(t1.Result);
+        print(t2.Result);
+        print(t3.Result);
+    }
+}
+```
+
+##### 同步执行Task
+
+（了解）
+
+![image-20240521235841130](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132618-55.png)
+
+```
+private void Start()
+{
+	Task t = new Task(() =>
+    {
+        Thread.Sleep(1000);
+        print("哈哈哈");
+    });
+    //t.Start();
+    t.RunSynchronously();
+    print("主线程执行");
+    //不Start 而是 RunSynchronously，可以同步执行
+}
+```
+
+##### Task线程阻塞方法
+
+```c#
+private void Start()
+{
+	//1.Wait方法：等待任务执行完毕，再执行后面的内容
+    Task t1 = Task.Run(() =>
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            print("t1:" + i);
+        }
+    });
+
+    Task t2 = Task.Run(() =>
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            print("t2:" + i);
+        }
+    });
+    t2.Wait();
+
+    //2.WaitAny静态方法：传入任务中任意一个任务结束就继续执行
+    Task.WaitAny(t1, t2);
+
+    //3.WaitAll静态方法：任务列表中所有任务执行结束就继续执行
+    Task.WaitAll(t1, t2);
+
+    print("主线程执行");
+}
+```
 
 
 
+##### Task完成后继续其它Task
 
+```c#
+bool isRuning;
+private void Start()
+{
+	//1.WhenAll静态方法 + ContinueWith方法：传入任务完毕后再执行某任务
+    Task.WhenAll(t1, t2).ContinueWith((t) =>
+    {
+        print("一个新的任务开始了");
+        int i = 0;
+        while (isRuning)
+        {
+            print(i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+    });
+
+    Task.Factory.ContinueWhenAll(new Task[] { t1, t2 }, (t) =>
+    {
+        print("一个新的任务开始了");
+        int i = 0;
+        while (isRuning)
+        {
+            print(i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+    });
+
+    //2.WhenAny静态方法 + ContinueWith方法：传入任务只要有一个执行完毕后再执行某任务
+    Task.WhenAny(t1, t2).ContinueWith((t) =>
+    {
+        print("一个新的任务开始了");
+        int i = 0;
+        while (isRuning)
+        {
+            print(i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+    });
+
+    Task.Factory.ContinueWhenAny(new Task[] { t1, t2 }, (t) =>
+    {
+        print("一个新的任务开始了");
+        int i = 0;
+        while (isRuning)
+        {
+            print(i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+    });
+}
+```
+
+
+
+##### 取消Task执行
+
+```c#
+CancellationTokenSource c;
+private void Start()
+{
+	//方法一：通过加入bool标识 控制线程内死循环的结束
+	
+    //方法二：通过CancellationTokenSource取消标识源类 来控制
+    //CancellationTokenSource对象可以达到延迟取消、取消回调等功能
+
+    c = new CancellationTokenSource();
+    //延迟取消
+    c.CancelAfter(5000);
+    //取消回调
+    c.Token.Register(() =>
+    {
+        print("任务取消了");
+    });
+    Task.Run(() =>
+    {
+        int i = 0;
+        while (!c.IsCancellationRequested)
+        {
+            print("计时：" + i);
+            ++i;
+            Thread.Sleep(1000);
+        }
+    });
+
+    //延迟取消
+}
+
+void Update()
+{
+    if(Input.GetKeyDown(KeyCode.Space))
+    {
+        c.Cancel();
+    }
+}
+```
+
+
+
+#### 异步方法async和await
+
+##### 同步和异步
+
+![image-20240522132600651](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132607.png)
+
+##### 异步编程
+
+![image-20240522132758789](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522132758.png)
+
+##### async和await
+
+![image-20240522133027484](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522133027.png)
+
+![image-20240522133703586](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522133703.png)
+
+##### **举例：复杂逻辑计算**
+
+利用Task新开线程进行计算 计算完毕后再使用 比如复杂的寻路算法
+
+```c#
+private void Start()
+{
+	CalcPathAsync(this.gameObject, Vector3.zero);
+}
+
+public async void CalcPathAsync(GameObject obj, Vector3 endPos)
+{
+    print("开始处理寻路逻辑");
+    int value = 10;
+    await Task.Run(() =>
+    {
+        //处理复杂逻辑计算 我这是通过 休眠来模拟 计算的复杂性
+        Thread.Sleep(1000);
+        value = 50;
+        //是多线程 意味着我们不能在 多线程里 去访问 Unity主线程场景中的对象
+        //这样写会报错
+        //print(obj.transform.position);
+    });
+
+    print("寻路计算完毕 处理逻辑" + value);
+    obj.transform.position = Vector3.zero;
+}
+```
+
+
+
+##### **举例：计时器**
+
+```c#
+CancellationTokenSource source;
+private void Start()
+{
+	Timer();
+}
+
+void Update()
+{
+    if (Input.GetKeyDown(KeyCode.Space))
+        source.Cancel();
+}
+
+public async void Timer()
+{
+    UnityWebRequest q = UnityWebRequest.Get("");
+    source = new CancellationTokenSource();
+    int i = 0;
+    while (!source.IsCancellationRequested)
+    {
+        print(i);
+        await Task.Delay(1000);
+        ++i;
+    }
+}
+```
+
+
+
+##### 举例：资源加载
+
+![image-20240522134224425](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522134224.png)
+
+https://github.com/svermeulen/Unity3dAsyncAwaitUtil
+
+
+
+### C#6
+
+ ![image-20240522134702285](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522134702.png)
+
+![image-20240522141249550](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522141249.png)
+
+#### 静态导入
+
+- 用法：在引用命名空间时，在using关键字后面加入static关键词
+- 作用：无需指定类型名称即可访问其静态成员和嵌套类型
+- 好处：节约代码量，可以写出更简洁的代码
+
+```
+using static UnityEngine.Mathf;
+using static Test3;
+
+public class Test3
+{
+    public class Test4
+    {
+
+    }
+
+    public static void TTT()
+    {
+        Debug.Log("123");
+    }
+}
+
+public class Lesson7 : MonoBehaviour
+{
+	private void Start()
+	{
+		//Mathf.Max(10,20);
+		Max(10, 20);
+		//Test3.Test4 t = new Test3.Test4();
+		Test4 t = new Test4();
+	}
+}
+
+```
+
+#### 异常筛选器
+
+- 用法：在异常捕获语句块中的Catch语句后通过加入when关键词来筛选异常。
+
+  when（表达式）该表达式返回值必须为bool值，如果为ture则执行异常处理，如果为false，则不执行
+
+- 作用：用于筛选异常
+
+- 好处：帮助我们更准确的排查异常，根据异常类型进行对应的处理
+
+```
+private void Start()
+{
+	try
+    {
+        //用于检查异常的语句块
+    }
+    catch (System.Exception e) when(e.Message.Contains("301"))
+    {
+        //当错误编号为301时  作什么处理
+        print(e.Message);
+    }
+    catch (System.Exception e) when (e.Message.Contains("404"))
+    {
+        //当错误编号为404时  作什么处理
+        print(e.Message);
+    }
+    catch (System.Exception e) when (e.Message.Contains("21"))
+    {
+        //当错误编号为21时  作什么处理
+        print(e.Message);
+    }
+    catch (System.Exception e)
+    {
+        //当错误编号为其它时  作什么处理
+        print(e.Message);
+    }
+}
+```
+
+#### nameof运算符
+
+- 用法：nameof(变量、类型、成员)通过该表达式，可以将他们的名称转为字符串
+- 作用：可以得到变量、类、函数等信息的具体字符串名称
+
+```c#
+int i = 10;
+//输出：i
+print(nameof(i));
+
+//输出：List
+print(nameof(List<int>));
+//输出：Add
+print(nameof(List<int>.Add));
+
+//输出：AI
+print(nameof(UnityEngine.AI));
+
+List<int> list = new List<int>() { 1,2,3,4};
+//输出：list
+print(nameof(list));
+//输出：Count
+print(nameof(list.Count));
+//输出：Add
+print(nameof(list.Add));
+```
+
+
+
+### C#7
+
+![image-20240522135635496](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522135635.png)
+
+![image-20240522135651455](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522135651.png)
+
+![image-20240522141236158](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522141236.png)
+
+![image-20240522144010594](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522144010.png)
+
+#### 字面值改进
+
+- 基本概念：在声明数值变量时，为了方便查看数值，可以在数值之间插入_作为分隔符
+- 主要作用：方便数值变量的阅读
+
+```c#
+int i = 9_9123_1239;
+print(i);
+int i2 = 0xAB_CD_17;
+print(i2);
+```
+
+#### out快捷使用和弃元
+
+- 用法：不需要再使用带有out参数的函数之前，声明对应变量
+- 作用：简化代码，提高开发效率
+
+```c#
+private void Start()
+{
+	//1.以前使用带out函数的写法
+    //int a;
+    //int b;
+    //Calc(out a, out b);
+
+    //2.现在的写法
+    Calc(out int x, out int y);
+    print(x);
+    print(y);
+
+    //3.结合var类型更简便(但是这种写法在存在重载时不能正常使用,必须明确调用的是谁)
+    Calc(out int a, out var b);
+    print(a);
+    print(b);
+
+    //4.可以使用 _弃元符号 省略不想使用的参数
+    Calc(out int c, out _);
+    print(c);
+}
+
+public void Calc(out int a, out int b)
+{
+    a = 10;
+    b = 20;
+}
+
+public void Calc(out float a, out float b)
+{
+    a = 10;
+    b = 20;
+}
+```
+
+#### ref修饰临时变量和返回值
+
+- 基本概念：使用ref修饰临时变量和函数返回值，可以让赋值变为引用传递
+- 作用：用于修改数据对象中的某些值类型变量
+
+```c#
+public struct TestRef
+{
+    public int atk;
+    public int def;
+
+    public TestRef(int atk, int def)
+    {
+        this.atk = atk;
+        this.def = def;
+    }
+}
+
+
+class XXX:
+private void Start()
+{
+    //1.修饰值类型临时变量
+	//testI2=900,testI=100
+	//testI和testI2不是指向栈的同一片空间
+	int testI = 100;
+    int testI2 = testI;
+    testI2 = 900;
+    
+    //testI2=900,testI=900
+    //testI和testI2指向栈的同一片空间
+    int testI = 100;
+    ref int testI2 = ref testI;
+    testI2 = 900;
+    
+    TestRef r = new TestRef(5,5);
+    ref TestRef r2 = ref r;
+    r2.atk = 10;
+    print(r.atk);
+
+    //2.获取对象中的参数
+    ref int atk = ref r.atk;
+    atk = 99;
+    print(r.atk);
+
+    //3.函数返回值
+    //函数和变量都要加ref，才可改变外面的值（类似指针）
+    int[] numbers = new int[] { 1, 2, 3, 45, 5, 65, 4532, 12 };
+    ref int number = ref FindNumber(numbers, 5);
+    number = 98765;
+    print(numbers[4]);
+}
+
+
+public ref int FindNumber(int[] numbers, int number)
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] == number)
+            return ref numbers[i];
+    }
+    return ref numbers[0];
+}
+```
+
+#### 本地函数
+
+- 基本概念：在函数内部声明一个临时函数
+- 注意：
+          本地函数只能在声明该函数的函数内部使用
+          本地函数可以使用声明自己的函数中的变量
+- 作用：方便逻辑的封装
+- 建议：把本地函数写在主要逻辑的后面，方便代码的查看
+
+```c#
+public int TestTst(int i)
+{
+    bool b = false;
+    i += 10;
+    Calc();
+    print(b);
+    return i;
+    
+    //本地函数（临时）
+    void Calc()
+    {
+        i += 10;
+        b = true;
+    }
+}
+```
+
+#### 抛出表达式
+
+##### throw回顾
+
+- 抛出表达式，就是指抛出一个错误
+- 一般的使用方式 都是 throw后面 new 一个异常类
+- 异常基类：Exception
+
+```c#
+throw new NullReferenceException("1231231");
+```
+
+##### C#自带异常类
+
+- IndexOutOfRangeException：当一个数组的下标超出范围时运行时引发。
+- NullReferenceException：当一个空对象被引用时运行时引发。
+  ArgumentException：方法的参数是非法的
+- ArgumentNullException： 一个空参数传递给方法，该方法不能接受该参数
+- ArgumentOutOfRangeException： 参数值超出范围
+- SystemException：其他用户可处理的异常的基本类
+- OutOfMemoryException：内存空间不够
+- StackOverflowException 堆栈溢出
+- ArithmeticException：出现算术上溢或者下溢
+- ArrayTypeMismatchException：试图在数组中存储错误类型的对象
+- BadImageFormatException：图形的格式错误
+- DivideByZeroException：除零异常
+- DllNotFoundException：找不到引用的DLL
+- FormatException：参数格式错误
+- InvalidCastException：使用无效的类
+- InvalidOperationException：方法的调用时间错误
+- MethodAccessException：试图访问思友或者受保护的方法
+- MissingMemberException：访问一个无效版本的DLL
+- NotFiniteNumberException：对象不是一个有效的成员
+- NotSupportedException：调用的方法在类中没有实现
+- InvalidOperationException：当对方法的调用对对象的当前状态无效时，由某些方法引发。
+
+##### 表达式错误抛出
+
+在C# 7中，可以在更多的表达式中进行错误抛出。好处：更节约代码量
+
+```c#
+private void Start()
+{
+    //1.空合并操作符后用throw
+    InitInfo("123");
+    //2.三目运算符后面用throw
+    GetInfo("1,2,3", 4);
+    //3.=>符号后面直接throw
+    Action action = () => throw new Exception("错了，不准用这个委托");
+    action();
+}
+
+
+private void InitInfo(string str) => jsonStr = str ?? throw new ArgumentNullException(nameof(str));
+
+
+private string GetInfo(string str, int index)
+{
+    string[] strs = str.Split(',');
+    return strs.Length > index ? strs[index] : throw new IndexOutOfRangeException();
+}
+```
+
+#### 元组
+
+- 基本概念：多个值的集合，相当于是一种快速构建数据结构类的方式
+
+   一般在函数存在多返回值时可以使用元组 (返回值1类型,返回值2类型,....) 来声明返回值
+
+  在函数内部返回具体内容时通过 (返回值1,返回值2,....)  进行返回
+
+- 主要作用：提升开发效率，更方便的处理多返回值等需要用到多个值时的需求
+
+##### 声明和使用
+
+```c#
+public (int, float) yz3;
+
+private void Start()
+{
+	//1.无变量名元组的声明(获取值：Item'N'作为从左到右依次的参数，N从1开始)
+    (int, float,bool,string) yz = (1, 5.5f, true, "123");
+    print(yz.Item1);
+    print(yz.Item2);
+    print(yz.Item3);
+    print(yz.Item4);
+    //2.有变量名元组的声明
+    (int i, float f, bool b, string str) yz2 = (1, 5.5f, true, "123");
+    print(yz2.i);
+    print(yz2.f);
+    print(yz2.b);
+    print(yz2.str);
+
+    //3.元组可以进行等于和不等于的判断
+    //  数量相同才比较，类型相同才比较，每一个参数的比较是通过==比较 如果都是true 则认为两个元组相等
+    if (yz == yz2)
+        print("相等");
+    else
+        print("不相等");
+
+    //元组不仅可以作为临时变量 成员变量也是可以的
+    print(this.yz3.Item1);
+}
+```
+
+##### 函数返回值
+
+```c#
+private void Start()
+{
+	//无变量名函数返回值
+    var info = GetInfo();
+    print(info.Item1);
+    print(info.Item2);
+    print(info.Item3);
+    //有变量名
+    print(info.f);
+    print(info.i);
+    print(info.str);
+
+    //元组的解构赋值
+    //相当于把多返回值元组拆分到不同的变量中
+    int myInt;
+    string myStr;
+    float myFloat;
+    (myStr, myInt, myFloat) = GetInfo();
+    //(string myStr, int myInt, float myFloat) = GetInfo();
+    print(myStr);
+    print(myInt);
+    print(myFloat);
+
+    //丢弃参数
+    //利用传入 下划线_ 达到丢弃该参数不使用的作用
+    (string ss, _, _) = GetInfo();
+    print(ss);
+}
+
+private (string str, int i, float f) GetInfo()
+{
+    return ("123", 2, 5.5f);
+}
+```
+
+##### 字典
+
+```c#
+private void Start()
+{
+	//字典中的键 需要用多个变量来控制
+    Dictionary<(int i, float f), string> dic = new Dictionary<(int i, float f), string>();
+    dic.Add((1, 2.5f), "123");
+
+    if(dic.ContainsKey((1,2.5f)))
+    {
+        print("存在相同的键");
+        print(dic[(1, 2.5f)]);
+    }
+}
+```
+
+#### 模式匹配
+
+- 基本概念：模式匹配时一种语法元素，可以测试一个值是否满足某种条件，并可以从值中提取信息
+- 在C#7中，模式匹配增强了两个现有的语言结构：
+  1.is表达式，is表达式可以在右侧写一个模式语法，而不仅仅是一个类型
+  2.switch语句中的case
+- 主要作用：节约代码量，提高编程效率
+- **模式匹配用的很多！**
+
+```c#
+private void Start()
+{
+	//1.常量模式(is 常量)：用于判断输入值是否等于某个值
+    object o = 1.5f;
+    if(o is 1)
+    {
+        print("o是1");
+    }
+    if(o is null)
+    {
+        print("o是null");
+    }
+
+    //（用的最多！！）2.类型模式(is 类型 变量名、case 类型 变量名)：用于判断输入值类型，如果类型相同，将输入值提取出来
+    //判断某一个变量是否是某一个类型，如果满足会将该变量存入你申明的变量中
+    //以前的写法
+    //if (o is int)
+    //{
+    //    int i = (int)o;
+    //    print(i);
+    //}
+    if (o is int i)
+    {
+        print(i);
+    }
+
+    switch (o)
+    {
+        case int value:
+            print("int:" + value);
+            break;
+        case float value:
+            print("float:" + value);
+            break;
+        case null:
+            print("null");
+            break;
+        default:
+            break;
+    }
+
+
+    //3.var模式：用于将输入值放入与输入值相同类型的新变量中
+    //相当于是将变量装入一个和自己类型一样的变量中
+    if(o is var v)
+    {
+        print(o);
+    }
+    //可在判断范围时使用（判断kk是否在[0,10]）
+    int kk = GetInt();
+    if(kk >= 0 && kk <= 10)
+    {
+
+    }
+
+    if (GetInt() is var k && k >= 0 && k <= 10)
+    {
+
+    }
+}
+```
+
+
+
+### C#8
+
+![image-20240522144156272](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522144156.png)
+
+![image-20240522144205791](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522144205.png)
+
+#### 静态本地函数
+
+##### 本地函数回顾
+
+- 在C#7的新语法中我们学习了本地函数
+- 基本概念：在函数内部声明一个临时函数
+- 注意：
+          本地函数只能在声明该函数的函数内部使用
+          本地函数可以使用声明自己的函数中的变量
+- 作用：方便逻辑的封装
+- 建议：把本地函数写在主要逻辑的后面，方便代码的查看
+
+```c#
+public int CalcInfo(int i)
+{
+    bool b = false;
+    i += 10;
+    Calc();
+    return i;
+
+    void Calc()
+    {
+        i += 10;
+        b = true;
+    }
+}
+
+priavte void Start()
+{
+	print(CalcInfo(10));
+}
+```
+
+##### C#8新增内容
+
+- 静态本地函数就是在本地函数前方加入静态关键字，让本地函数不能够使用访问封闭范围内（也就是上层方法中）的任何变量
+- /作用：让本地函数只能处理逻辑，避免让它通过直接改变上层变量来处理逻辑造成逻辑混乱
+
+```c#
+public int CalcInfo(int i)
+{
+    bool b = false;
+    i += 10;
+    Calc(ref i, ref b);
+    return i;
+
+    static void Calc(ref int i, ref bool b)
+    {
+        i += 10;
+        b = true;
+    }
+}
+
+priavte void Start()
+{
+	print(CalcInfo(10));
+}
+```
+
+#### Using声明
+
+##### 知识回顾
+
+在数据持久化xml相关知识当中，学习了using相关的知识点
+
+![image-20240522144801077](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522144801.png)
+
+```c#
+private void Start()
+{
+	//举例回顾：
+    using(StreamWriter strem = new StreamWriter("文件路劲"))
+    {
+        //对该变量进行逻辑处理 该变量只能在这个语句块中使用
+        strem.Write(true);
+        strem.Write(1.2f);
+        strem.Flush();
+        strem.Close();
+    }//语句块结束执行时 调用 声明对象的 Dispose方法 释放对象
+}
+```
+
+##### C#8新增内容
+
+Using 声明就是对using（）语法的简写
+
+当函数执行完毕时 会调用 对象的 Dispose方法 释放对象
+
+```c#
+public class TestUsing : IDisposable
+{
+    public void Dispose()
+    {
+        
+    }
+}
+
+class XXX:
+private void Start()
+{
+	using StreamWriter s2 = new StreamWriter("文件路径");
+    //对该对象进行逻辑操作
+    s2.Write(5);
+    s2.Flush();
+    s2.Close();
+    //利用这个写法 就会在上层语句块执行结束时释放该对象
+
+    //注意：在使用using语法时，声明的对象必须继承System.IDisposable接口
+    //因为必须具备Dispose方法，所以当声明没有继承该接口的对象时会报错
+    using TestUsing t = new TestUsing();
+}
+```
+
+#### 空合并赋值
+
+##### 空合并操作符回顾
+
+在C#进阶的特殊语法知识点中学习了 ?? 空合并操作符
+
+- 左边值 ?? 右边值
+- 如果左边值为null 就返回右边值 否则返回左边值
+- 只要是可以为null的类型都能用
+
+```c#
+string str = null;
+string str2 = str ?? "234";
+print(str2);
+//输出：234
+```
+
+##### C#8新增内容
+
+- 空合并赋值是C#8.0新加的一个运算符 ??=
+- 类似复合运算符
+- 左边值 ??= 右边值
+- 当左侧为空时才会把右侧值赋值给变量
+
+```c#
+string str = null;
+str ??= "4565";
+print(str);
+//输出：4565
+
+//注意：由于左侧为空才会讲右侧赋值给变量，所以不为空的变量不会改变
+str ??= "1111";
+print(str);
+//输出：4565
+```
+
+
+
+#### 解构函数
+
+##### 元组知识回顾
+
+之前学习过元组的解构，就是可以用单独的变量存储元组的值,相当于把多返回值元组拆分到不同的变量中
+
+```c#
+private void Start()
+{
+	int i;
+    float f;
+    string s;
+    (i,f,_,s) = GetInfo();
+}
+public (int, float, bool, string) GetInfo()
+{
+    return (1, 3.4f, true, "123");
+}
+```
+
+##### C#7的函数内容
+
+- 解构函数Deconstruct （C# 7就有了，讲解时换了顺序）
+- 可以在自定义类当中声明解构函数
+- 这样可以将该自定义类对象利用元组的写法对其进行变量的获取
+- 语法：在类的内部申明函数public void Deconstruct(out 变量类型 变量名, out 变量类型 变量名.....)
+- 特点：一个类中可以有多个Deconstruct，但是参数数量不能相同
+
+```c#
+public class Person
+{
+    public string name;
+    public bool sex;
+    public string number;
+    public string email;
+
+    public void Deconstruct(out string n, out bool sex) => (n, sex) = (this.name, this.sex);
+
+    public void Deconstruct(out string n, out bool sex, out string number) => (n, sex, number) = (this.name, this.sex, this.number);
+
+    public void Deconstruct(out string n, out bool sex, out string number, out string email)
+    {
+        n = name;
+        sex = this.sex;
+        number = this.number;
+        email = this.email;
+    }
+}
+
+
+class XXX:
+private void Start()
+{
+	Person p = new Person();
+    p.name = "akkkkk";
+    p.sex = false;
+    p.email = "xxx@163.com";
+    p.number = "123123123123";
+    
+    //可以对该对象利用元组将其具体的变量值解构出来
+	//相当于把不同的成员变量拆分到不同的临时变量中
+    (string name, bool sex) = p;
+    print(name);
+    print(sex);
+    string str3;
+    (_, _, str3) = p;
+    print(str3);
+}
+```
+
+#### 模式匹配
+
+- 模式匹配（Pattern Matching）
+- “模式匹配”是一种测试表达式是否具有特定特征的方法
+- 在编程里指的是，把一个不知道具体数据信息的内容，通过一些固定的语法格式来确定模式数据的具体内容的过程
+
+##### C#7模式匹配回顾
+
+- 常量模式(is 常量)：用于判断输入值是否等于某个值
+
+- 类型模式(is 类型 变量名、case 类型 变量名)：用于判断输入值类型，如果类型相同，将输入值提取出来
+
+  判断某一个变量是否是某一个类型，如果满足会将该变量存入你申明的变量中
+
+- var模式：用于将输入值放入与输入值相同类型的新变量中
+
+  相当于是将变量装入一个和自己类型一样的变量中
+
+##### C#8增强内容：Switch表达式
+
+- switch表达式是对有返回值的switch语句的缩写
+
+- 用=>表达式符号代替case: 组合
+
+- 用_弃元符号代替default
+
+- 它的使用限制，主要是用于switch语句当中只有一句代码用于返回值时使用
+
+- 语法：
+
+  ```c#
+  函数声明 => 变量 switch
+  {
+      常量 => 返回值表达式,
+      常量 => 返回值表达式,
+      常量 => 返回值表达式,
+      .. ..
+      _ => 返回值表达式,
+  }
+  ```
+
+```c#
+public enum PosType
+{
+    Top_Left,
+    Top_Right,
+    Bottom_Left,
+    Bottom_Right,
+}
+
+class XXX:
+private void Start()
+{
+	print(GetPos(PosType.Bottom_Right));
+}
+
+public Vector2 GetPos(PosType type) => type switch
+{
+    PosType.Top_Left => new Vector2(0, 0),
+    PosType.Top_Right => new Vector2(1, 0),
+    PosType.Bottom_Left => new Vector2(0, 1),
+    PosType.Bottom_Right => new Vector2(1, 1),
+    _ => new Vector2(0, 0)
+};
+//原用法：
+//{
+//    switch (type)
+//    {
+//        case PosType.Top_Left:
+//            return new Vector2(0, 0);
+//        case PosType.Top_Right:
+//            return new Vector2(1, 0);
+//        case PosType.Bottom_Left:
+//            return new Vector2(0, 1);
+//        case PosType.Bottom_Right:
+//            return new Vector2(1, 1);
+//        default:
+//            return new Vector2(0, 0);
+//    }
+//}
+```
+
+##### C#8增强内容：属性模式
+
+- 就是在常量模式的基础上判断对象上各属性
+- 用法：变量 is {属性:值, 属性:值}
+
+```c#
+public class DiscountInfo
+{
+    public string discount;
+    public bool isDiscount;
+
+    public DiscountInfo(string discount, bool isDiscount)
+    {
+        this.discount = discount;
+        this.isDiscount = isDiscount;
+    }
+}
+
+class XXX:
+private void Start()
+{
+	DiscountInfo info = new DiscountInfo("5折", true);
+    //if( info.discount == "6折" && info.isDiscount)
+    if (info is { discount: "6折", isDiscount: true })
+        print("信息相同");
+
+    print(GetMoney(info, 100));
+
+    
+}
+
+//结合switch表达式使用,可以通过属性模式判断条件的组合
+public float GetMoney(DiscountInfo info, float money) => info switch
+{
+    //利用属性模式 结合 switch表达式 判断n个条件是否满足
+    { discount: "5折", isDiscount: true } => money * .5f,
+    { discount: "6折", isDiscount: true } => money * .6f,
+    { discount: "7折", isDiscount: true } => money * .7f,
+    _ => money
+};
+```
+
+##### C#8增强内容：元组模式
+
+- 属性模式可以在switch表达式中判断多个变量同时满足再返回什么，但它必须是一个数据结构类对象，判断其中的变量
+- 元组模式可以更简单的完成这样的功能，我们不需要声明数据结构类，可以直接利用元组进行判断
+
+```c#
+private void Start()
+{
+	int ii = 10;
+    bool bb = true;
+    if((ii, bb) is (11, true))
+    {
+        print("元组的值相同");
+    }
+    //举例说明
+    print(GetMoney("5折", true, 200));
+}
+
+public float GetMoney(string discount, bool isDiscount, float money) => (discount, isDiscount) switch
+{
+    ("5折", true) => money * .5f,
+    ("6折", true) => money * .6f,
+    ("7折", true) => money * .7f,
+    _ => money
+};
+```
+
+##### C#8增强内容：位置模式
+
+如果自定义类中实现了解构函数，那么可以直接用对应类对象与元组进行is判断
+
+```c#
+public class DiscountInfo
+{
+    public string discount;
+    public bool isDiscount;
+
+    public DiscountInfo(string discount, bool isDiscount)
+    {
+        this.discount = discount;
+        this.isDiscount = isDiscount;
+    }
+
+    public void Deconstruct(out string dis, out bool isDis)
+    {
+        dis = this.discount;
+        isDis = this.isDiscount;
+    }
+}
+
+class XXX:
+private void Start()
+{
+    if(info is ("5折", true))
+    {
+        print("位置模式 满足条件");
+    }
+
+    //同样也可以配合switch表达式来处理逻辑
+    print(GetMoney2(info, 300));
+}
+
+public float GetMoney2(DiscountInfo info, float money) => info switch
+{
+    ("5折", true) when money > 100 => money * .5f,
+    ("6折", true) => money * .6f,
+    ("7折", true) => money * .7f,
+    _ => money
+};
+
+ //补充：可以配合when关键字进行逻辑处理
+public float GetMoney3(DiscountInfo info, float money) => info switch
+{
+    (string dis, bool isDis) when dis == "5折" && isDis => money * .5f,
+    (string dis, bool isDis) when dis == "6折" && isDis => money * .6f,
+    (string dis, bool isDis) when dis == "7折" && isDis => money * .7f,
+    _ => money
+};
+```
+
+### C#9
+
+待补充。
+
+## 日期和时间
+
+![image-20240522161036199](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522161036.png)
+
+### 时间名词说明
+
+![image-20240522161102553](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522161102.png)
+
+![image-20240522161141501](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/05/22/20240522161141.png)
+
+### DateTime
+
+- 命名空间：System
+- DateTime 是 C# 提供给我们处理日期和时间的结构体
+- DateTime 对象的默认值和最小值是0001年1月1日00:00:00（午夜），最大值可以是9999年12月31日晚上11:59:59
+
+#### 初始化
+
+主要参数：
+
+- 年、月、日、时、分、秒、毫秒
+- ticks：以格里高利历00:00:00.000年1月1日以来的100纳秒间隔数表示,一般是一个很大的数字
+
+次要参数：
+
+- DateTimeKind：日期时间种类
+
+  ​	Local：本地时间
+
+  ​	Utc：UTC时间
+
+  ​	Unspecified：不指定
+
+- Calendar:日历（使用哪个国家的日历，一般在Unity开发中不使用）
+
+```c#
+DateTime dt = new DateTime(2022, 12, 1, 13, 30, 45, 500);
+//年、月、日、时、分、秒、毫秒
+print(dt.Year + "-" + dt.Month + "-" + dt.Day + "-" + dt.Hour + "-" + dt.Minute + "-" + dt.Second + "-" + dt.Millisecond);
+
+//以格里高利历00:00:00.000年1月1日以来的100纳秒间隔数表示,一般是一个很大的数字
+print(dt.Ticks);
+
+//一年的第多少天
+print(dt.DayOfYear);
+
+//星期几
+print(dt.DayOfWeek);
+```
+
+#### 获取时间
+
+```c#
+//当前日期和时间
+DateTime nowTime = DateTime.Now;
+print(nowTime.Minute);
+//返回今日日期
+DateTime nowTime2 = DateTime.Today;
+print(nowTime2.Year + "-" + nowTime2.Month + "-" + nowTime2.Day);
+//返回当前UTC日期和时间
+DateTime nowTimeUTC = DateTime.UtcNow;
+```
+
+#### 计算时间
+
+```c#
+//各种加时间
+DateTime nowTime3 = nowTime.AddDays(-1);
+print(nowTime3.Day);
+```
+
+#### 字符串输出
+
+```c#
+print(nowTime.ToString());
+print(nowTime.ToShortTimeString());
+print(nowTime.ToShortDateString());
+print(nowTime.ToLongTimeString());
+print(nowTime.ToLongDateString());
+
+print(nowTime.ToString("D"));
+print(nowTime.ToString("yyyy-MM-dd-ddd/HH-mm-ss"));
+```
+
+#### 字符串转DateTime
+
+```c#
+//字符串想要转回DateTime成功的话 
+//那么这个字符串的格式是有要求的 一定是最基本的 toString的转换出来的字符串才能转回去
+//年/月/日 时:分:秒
+string str = nowTime.ToString();
+str = "1988/5/4 18:00:08";
+print(str);
+DateTime dt3;
+if(DateTime.TryParse(str, out dt3))
+{
+    print(dt3);
+}
+else
+{
+    print("转换失败");
+}
+```
+
+#### 存储时间
+
+（最常用）
+
+在网络游戏时，可以用来计算玩家间隔的时间（比如隔1天才能抽卡等）
+
+存储时间方式很多：
+
+1. 以直接存字符串
+2. 可以直接存Ticks
+3. 可以直接存时间戳信息
+4. 存储时间戳的形式 更加节约（通过后面的TimeSpan进行计算）
+
+### TimeSpan
+
+- 命名空间：System
+
+- TimeSpan 是 C# 提供给我们的时间跨度结构体
+
+- 用两个DateTime对象相减 可以得到该对象
+
+  ```c#
+  TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1);
+  print(ts.TotalMinutes);
+  print(ts.TotalSeconds);
+  print(ts.TotalDays);
+  print(ts.TotalHours);
+  print(ts.Ticks);
+  
+  print(ts.Days + "-" + ts.Hours + "-" + ts.Minutes + "-" + ts.Seconds + "-" + ts.Milliseconds);
+  ```
+
+#### 代表时间间隔
+
+```c#
+TimeSpan ts2 = new TimeSpan(1,0,0,0);
+DateTime timeNow = DateTime.Now + ts2;
+```
+
+#### 进行相互计算
+
+```c#
+TimeSpan ts3 = new TimeSpan(0, 1, 1, 1);
+TimeSpan ts4 = ts2 + ts3;
+print(ts4.Days + "-" + ts4.Hours);
+```
+
+#### 自带常量
+
+自带的常量方便和ticks进行计算
+
+```c#
+print(ts4.Ticks / TimeSpan.TicksPerSecond);
+```
 
 
 
