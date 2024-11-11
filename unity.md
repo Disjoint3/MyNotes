@@ -2323,15 +2323,15 @@ bool等其他一般数据类型，可以自行利用API进行存储，定一个�
 
 # XML
 
-![image-20240522165246790](C:/Users/14638/AppData/Roaming/Typora/typora-user-images/image-20240522165246790.png)
+![image-20240522165246790](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/11/09/20241109164123.png)
 
-![image-20240522165410180](C:/Users/14638/AppData/Roaming/Typora/typora-user-images/image-20240522165410180.png)
+![image-20240522165410180](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/11/09/20241109164123-1.png)
 
 ## XML文件格式
 
 ### XML基本语法
 
-![image-20240522165847631](C:/Users/14638/AppData/Roaming/Typora/typora-user-images/image-20240522165847631.png)
+![image-20240522165847631](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/11/09/20241109164123-2.png)
 
 #### 注释
 
@@ -2344,7 +2344,7 @@ bool等其他一般数据类型，可以自行利用API进行存储，定一个�
 
 #### 固定内容（编码）
 
-![image-20240522170424108](C:/Users/14638/AppData/Roaming/Typora/typora-user-images/image-20240522170424108.png)
+![image-20240522170424108](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/11/09/20241109164123-3.png)
 
 ```xml
 <!--固定内容代表XML的版本 使用的编码-->
@@ -2355,23 +2355,23 @@ bool等其他一般数据类型，可以自行利用API进行存储，定一个�
 
 XML是树状结构，一定要有根结点。
 
-![image-20240522170748892](C:/Users/14638/AppData/Roaming/Typora/typora-user-images/image-20240522170748892.png)
+![image-20240522170748892](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/11/09/20241109164123-4.png)
 
 #### 基本规则
 
-![image-20240522170823520](C:/Users/14638/AppData/Roaming/Typora/typora-user-images/image-20240522170823520.png)
+![image-20240522170823520](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/11/09/20241109164123-5.png)
 
 ### XML属性
 
 #### 属性语法
 
-![image-20240522171023078](C:/Users/14638/AppData/Roaming/Typora/typora-user-images/image-20240522171023078.png)
+![image-20240522171023078](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/11/09/20241109164123-6.png)
 
-![image-20240522171129777](C:/Users/14638/AppData/Roaming/Typora/typora-user-images/image-20240522171129777.png)
+![image-20240522171129777](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/11/09/20241109164123-7.png)
 
 ### 语法错误
 
-![image-20240522171319849](C:/Users/14638/AppData/Roaming/Typora/typora-user-images/image-20240522171319849.png)
+![image-20240522171319849](https://cdn.jsdelivr.net/gh/Disjoint3/ImgHost@main/Img/2024/11/09/20241109164123-8.png)
 
 ## C#读取存储XML
 
